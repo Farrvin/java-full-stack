@@ -1,0 +1,78 @@
+//if and else statements
+
+import java.util.Scanner;
+class Main{
+    public static void main(String args[]){
+        String userName = "Farvin";
+        String password = "Farvin@344";
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter your userName: ");
+        String uname = sc.nextLine();
+        System.out.println("Enter your password: ");
+        String pass = sc.nextLine();
+        if (userName.equals(uname) && password.equals(pass)){
+            System.out.println("welcome to home page");
+        }
+        else{
+            System.out.println("The page is invalid");
+        }
+        
+        sc.close();
+        
+    }
+}
+
+
+//if , else, and if else
+
+import java.util.Scanner;
+class Main{
+    public static void main(String args[]){
+        //String userName = "Farvin";
+        //String password = "Farvin@344";
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter your number: ");
+        int num = sc.nextInt();
+        
+        if (num % 2 == 0){
+            System.out.println("number is even");
+        }
+        else if(num % 2!= 0){
+            System.out.println("number is odd");
+        }
+        else{
+            System.out.println("Invalid input");
+        }
+        
+        sc.close();
+        
+    }
+}
+
+import java.util.Scanner;
+class Main{
+    public static void main(String args[]){
+        String username = "farvin";
+        String password = "1233";
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.println("Enter username: ");
+        String uname = sc.nextLine();
+        System.out.println("Enter password: ");
+        String pass = sc.nextLine();
+        if (username.equals(uname) && password.equals(pass)){
+            System.out.println("Welcome to the page");
+        }
+        else if(username.equals(uname) && !password.equals(pass)){
+            System.out.println("password is wrong");
+            
+        }
+        else if(!username.equals(uname) &&password.equals(pass)){
+            System.out.println("username is wrong");
+        }
+        else {
+            System.out.println("page is inavalid");
+        }
+        sc.close();
+    }
+}
