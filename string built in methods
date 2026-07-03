@@ -1,0 +1,264 @@
+1. charAt()
+
+public class Main {
+    public static void main(String[] args) {
+        String str = "Java";
+        System.out.println(str.charAt(2));
+    }
+}
+
+2. compareTo
+
+public class Main {
+    public static void main(String[] args) {
+        String s1 = "Apple";
+        String s2 = "Banana";
+        System.out.println(s1.compareTo(s2));
+    }
+}
+
+3. compareToIgnoreCase
+
+public class Main {
+    public static void main(String[] args) {
+        String s1 = "JAVA";
+        String s2 = "java";
+        System.out.println(s1.compareToIgnoreCase(s2));
+    }
+}
+
+
+4. concat
+
+public class Main {
+    public static void main(String[] args) {
+        String s1 = "Hello ";
+        String s2 = "World";
+        System.out.println(s1.concat(s2));
+    }
+}
+
+5. contains
+public class Main {
+    public static void main(String[] args) {
+        String str = "Java Programming";
+        System.out.println(str.contains("Program"));
+    }
+}
+
+6. contentEquals
+
+public class Main {
+    public static void main(String[] args) {
+        String str = "Java";
+        System.out.println(str.contentEquals("Java"));
+    }
+}
+
+7. copyValueOf
+
+public class Main {
+    public static void main(String[] args) {
+        char[] ch = {'J','A','V','A'};
+        String str = String.copyValueOf(ch);
+        System.out.println(str);
+    }
+}
+
+8. endsWith
+
+public class Main {
+    public static void main(String[] args) {
+        String str = "Hello.java";
+        System.out.println(str.endsWith(".java"));
+    }
+}
+
+9. equals
+
+public class Main {
+    public static void main(String[] args) {
+        String s1 = "Java";
+        String s2 = "Java";
+        System.out.println(s1.equals(s2));
+    }
+}
+
+10. equalsIgnoreCase
+
+public class Main {
+    public static void main(String[] args) {
+        String s1 = "JAVA";
+        String s2 = "java";
+        System.out.println(s1.equalsIgnoreCase(s2));
+    }
+}
+
+11. indexOf
+
+public class Main {
+    public static void main(String[] args) {
+        String str = "Programming";
+        System.out.println(str.indexOf('g'));
+    }
+}
+
+12. isEmpty
+
+public class Main {
+    public static void main(String[] args) {
+        String str = "";
+        System.out.println(str.isEmpty());
+    }
+}
+
+13. join
+
+public class Main {
+    public static void main(String[] args) {
+        String str = String.join("-", "Java", "Python", "C");
+        System.out.println(str);
+    }
+}
+
+14. lastIndexOf
+
+public class Main {
+    public static void main(String[] args) {
+        String str = "banana";
+        System.out.println(str.lastIndexOf('a'));
+    }
+}
+15. matches
+
+public class Main {
+    public static void main(String[] args) {
+        String str = "12345";
+        System.out.println(str.matches("\\d+"));
+    }
+}
+
+16. replace()
+public class Main {
+    public static void main(String[] args) {
+        String str = "Java";
+        System.out.println(str.replace('a', 'o'));
+    }
+}
+
+17. replaceAll
+
+public class Main {
+    public static void main(String[] args) {
+        String str = "Java123";
+        System.out.println(str.replaceAll("[0-9]", ""));
+    }
+}
+
+18. replaceFirst
+
+public class Main {
+    public static void main(String[] args) {
+        String str = "one one one";
+        System.out.println(str.replaceFirst("one", "two"));
+    }
+}
+
+19. split
+
+public class Main {
+    public static void main(String[] args) {
+        String str = "Java,Python,C";
+        String[] arr = str.split(",");
+
+        for(String s : arr) {
+            System.out.println(s);
+        }
+    }
+}
+
+20. startsWith
+
+public class Main {
+    public static void main(String[] args) {
+        String str = "Java Programming";
+        System.out.println(str.startsWith("Java"));
+    }
+}
+
+21. subSequence
+
+public class Main {
+    public static void main(String[] args) {
+        String str = "Programming";
+        System.out.println(str.subSequence(3, 8));
+    }
+}
+
+22. substring
+
+public class Main {
+    public static void main(String[] args) {
+        String str = "Programming";
+        System.out.println(str.substring(3, 8));
+    }
+}
+
+23. toCharArray
+
+public class Main {
+    public static void main(String[] args) {
+        String str = "Java";
+        char[] ch = str.toCharArray();
+
+        for(char c : ch) {
+            System.out.println(c);
+        }
+    }
+}
+
+24. toLowerCase
+
+public class Main {
+    public static void main(String[] args) {
+        String str = "JAVA";
+        System.out.println(str.toLowerCase());
+    }
+}
+
+25. toUpperCase
+
+public class Main {
+    public static void main(String[] args) {
+        String str = "java";
+        System.out.println(str.toUpperCase());
+    }
+}
+
+26. toString
+
+public class Main {
+    public static void main(String[] args) {
+        String str = "Java";
+        System.out.println(str.toString());
+    }
+}
+
+27. trim
+
+public class Main {
+    public static void main(String[] args) {
+        String str = "   Java Programming   ";
+        System.out.println(str.trim());
+    }
+}
+
+28. valueOf
+
+public class Main {
+    public static void main(String[] args) {
+        int num = 100;
+        String str = String.valueOf(num);
+        System.out.println(str);
+    }
+}
