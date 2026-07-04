@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+class Duck
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+
+        System.out.print("Enter a number: ");
+        int n=sc.nextInt();
+
+        String s=String.valueOf(n);
+
+        if(s.indexOf('0')>0)
+            System.out.println("Duck Number");
+        else
+            System.out.println("Not Duck Number");
+    }
+}
