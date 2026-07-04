@@ -1,0 +1,14 @@
+class Main
+{
+    public static void main(String args[])
+    {
+        String name = "Farvin";
+        int rollNo = 8;
+        String branch = "IT";
+
+        System.out.println("Student Details");
+        System.out.println("Name: " + name);
+        System.out.println("Roll No: " + rollNo);
+        System.out.println("Branch: " + branch);
+    }
+}
